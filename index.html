@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ViewPort -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./public/css/style.css">
     <title>ohmyfood</title> <!-- Titre de la page -->
     <meta name="description" content="Profitez d'un maximum de menus de restaurants gastronomiques"> <!-- Meta Description -->
     <meta property="og:title" content="ohmyfood"> <!-- Open Graph -->
@@ -16,21 +16,22 @@
 </head>
 
 <body>
-    <header class="header--title">
-        <h1>ohmyfood</h1>
+    <header class="header">
+        <img src="logo/ohmyfood.png" class="header__title">
     </header>
 
-    <div id="container--firstSection">
-        <div class="section--location">
-            <p><i class="fas fa-map-marker-alt"></i>
-            <a href="#">Paris, Belleville</a>
-            </p>
+    <div id="section--location">
+        <div class="section__location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Paris, Belleville</span>
         </div>
         <div class="section--title--description--btn">
             <p class="section__title">Réservez le menu qui vous convient</p>
             <p class="section__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <div class="section__btn">
-                <a href="#">Explorer nos restaurants</a>
+                <a href="#">
+                    <button class="btn">Explorer nos restaurants</button>
+                </a>
             </div>
         </div>
     </div>
@@ -38,32 +39,32 @@
     <div id="container--secondSection">
         <p class="secondSection__title">Fonctionnement</p>
 
-        <div class="secondSection--firstBox">
+        <div class="secondSection--Box">
             <div class="secondSection__numberBox">
                 <span class="numberBox">1</span>
             </div>
-            <div class="secondSection__firstBox__text">
-                <p><i class="fas fa-mobile-alt"></i></p>
+            <div class="secondSection__text">
+                <i class="fas fa-mobile-alt"></i>
                 <p class="boxText">Choisissez un restaurant</p>
             </div>
         </div>
 
-        <div class="secondSection--secondBox">
+        <div class="secondSection--Box">
             <div class="secondSection__numberBox">
                 <span class="numberBox">2</span>
             </div>
-            <div class="secondSection__secondBox__text">
-                <p><i class="fas fa-list-ul"></i></p>
+            <div class="secondSection__text">
+                <i class="fas fa-list-ul"></i>
                 <p class="boxText">Composez votre menu</p>
             </div>
         </div>
 
-        <div class="secondSection--thirdBox">
+        <div class="secondSection--Box">
             <div class="secondSection__numberBox">
                 <span class="numberBox">3</span>
             </div>
-            <div class="secondSection__thirdBox__text">
-                <p><i class="fas fa-store"></i></p>
+            <div class="secondSection__text">
+                <i class="fas fa-store"></i>
                 <p class="boxText">Dégustez au restaurant</p>
             </div>
         </div>

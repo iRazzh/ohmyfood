@@ -1,0 +1,65 @@
+// First Section = Location
+
+#section--location{
+    text-align: center;
+    background-color: #f6f6f6;
+
+    .section__location{
+    background-color: #eaeaea;
+    padding: 1rem 0 1rem 0;
+    margin-top: 0.2rem;
+    }
+
+    .fa-map-marker-alt{
+        margin-right: 0.5rem;
+    }
+
+    .section--title--description--btn{
+        margin-top: 2rem;
+    }
+    .section__title{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .section__description{
+        font-size: 16px;
+    }
+}
+
+// Second Section = Operation
+
+#container--secondSection{
+    padding: 0 0.8rem;
+    margin-top: 4rem;
+
+    .secondSection__title{
+    font-size: 23px;
+    font-weight: bold;
+    }
+    .secondSection--Box{
+        display: flex;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: grey;
+        border-radius: 1.5rem;
+    }
+    .numberBox{
+        background-color: $color-primary;
+        color: white;
+        border-radius: 50%;
+        padding: 4px 8px;
+        margin: 0 1.5rem 0 -25px;
+    }
+    .secondSection__text{
+        display: flex;
+
+    }
+    i{
+        font-size: 20px;
+    }
+    .boxText{
+        margin: 0;
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet ohmyfood d'OC ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix":"postcss .public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iRazzh/ohmyfood.git"
+  },
+  "author": "Tanguy GERARDIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iRazzh/ohmyfood/issues",
+  "browserslist": "last 4 versions",
+  },
+  "homepage": "https://github.com/iRazzh/ohmyfood#readme"
+}
