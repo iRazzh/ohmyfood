@@ -30,7 +30,7 @@
 // Second Section = Operation
 
 #container--secondSection{
-    padding: 0 0.8rem;
+    padding: 0 1rem;
     margin-top: 4rem;
 
     .secondSection__title{
@@ -39,17 +39,19 @@
     }
     .secondSection--Box{
         display: flex;
-        padding: 1rem;
+        padding: 1.5rem;
         margin-bottom: 1rem;
-        background-color: grey;
+        background-color: #f6f6f6;
         border-radius: 1.5rem;
+        box-shadow: 0px 5px 4px #eaeaea;
+        cursor: pointer;
     }
     .numberBox{
         background-color: $color-primary;
         color: white;
         border-radius: 50%;
         padding: 4px 8px;
-        margin: 0 1.5rem 0 -25px;
+        margin: 0 1.5rem 0 -34px;
     }
     .secondSection__text{
         display: flex;
@@ -57,9 +59,18 @@
     }
     i{
         font-size: 20px;
+        color: grey;
+    }
+    .fa-store{
+        color: $color-primary
     }
     .boxText{
         margin: 0;
         margin-left: 1rem;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .thirdBox{
+        background-color: #EFE0EE;
     }
 }
