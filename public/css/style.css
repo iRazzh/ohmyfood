@@ -22,6 +22,12 @@ body, html {
 
 #container--secondSection {
   padding: 0 1rem;
+  margin-top: 4rem;
+}
+
+#container--thirdSection {
+  padding: 0 1rem;
+  margin-top: 6rem;
 }
 
 #section--location {
@@ -48,10 +54,6 @@ body, html {
   font-size: 16px;
 }
 
-#container--secondSection {
-  padding: 0 1rem;
-  margin-top: 4rem;
-}
 #container--secondSection .secondSection__title {
   font-size: 23px;
   font-weight: bold;
@@ -90,6 +92,65 @@ body, html {
 }
 #container--secondSection .thirdBox {
   background-color: #EFE0EE;
+}
+
+#container--thirdSection {
+  background-color: #f6f6f6;
+}
+#container--thirdSection .thirdSection__title {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  padding: 3rem 0 1rem;
+}
+#container--thirdSection .thirdSection__restaurants {
+  padding: 0 0 2rem;
+}
+#container--thirdSection .menus {
+  text-decoration: none;
+  color: black;
+}
+#container--thirdSection .card {
+  width: auto;
+  background-color: white;
+  margin: 0 0 1rem;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 5px 4px #eaeaea;
+}
+#container--thirdSection .card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+#container--thirdSection .new {
+  color: green;
+  background-color: #99E2D0;
+  text-align: center;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#container--thirdSection .presentation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0;
+}
+#container--thirdSection .restaurantName {
+  margin: 0;
+  font-weight: bold;
+}
+#container--thirdSection .site {
+  margin-top: 0.2rem;
+}
+#container--thirdSection .fa-heart {
+  font-size: 25px;
+  padding-top: 0.5rem;
 }
 
 .header {
