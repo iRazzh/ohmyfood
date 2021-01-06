@@ -1,9 +1,17 @@
+// Second Section Homepage - Operation
 #container--secondSection{
     padding: 0 1rem;
     margin-top: 4rem;
 }
 
+// Third Section Homepage - Restaurants
 #container--thirdSection{
     padding: 0 1rem;
     margin-top: 6rem;
+}
+
+// Footer Homepage 
+#container--footer{
+    background-color: $color-footer;
+    color: white;
 }

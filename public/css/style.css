@@ -2,7 +2,7 @@
   font-family: "Shrikhand";
   font-style: normal;
   font-weight: normal;
-  src: url("/shrikhand/shrikhand-v6-latin-regular.eot"), url("/shrikhand/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("/shrikhand/shrikhand-v6-latin-regular.woff") format("woff"), url("/shrikhand/shrikhand-v6-latin-regular.ttf") format("truetype"), url("/shrikhand/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
+  src: url("/shrikhand/shrikhand-v6-latin-regular.eot"), url("/shrikhand/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("/shrikhand/shrikhand-v6-latin-regular.woff2") format("woff2") url("/shrikhand/shrikhand-v6-latin-regular.woff") format("woff"), url("/shrikhand/shrikhand-v6-latin-regular.ttf") format("truetype"), url("/shrikhand/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
   /* Legacy iOS */
 }
 body, html {
@@ -28,6 +28,35 @@ body, html {
 #container--thirdSection {
   padding: 0 1rem;
   margin-top: 6rem;
+}
+
+#container--footer {
+  background-color: #353535;
+  color: white;
+}
+
+.footer {
+  margin-left: 1.5rem;
+}
+.footer p {
+  margin: 0;
+}
+
+.footer__title {
+  padding: 1.5rem 0;
+  font-family: "Shrikhand";
+}
+
+.footer__proposing, .footer__partner, .footer__legals {
+  padding: 0 0 0.5rem;
+}
+
+.footer__contact {
+  padding: 0 0 2rem;
+}
+.footer__contact a {
+  text-decoration: none;
+  color: white;
 }
 
 #section--location {
@@ -91,7 +120,7 @@ body, html {
   font-size: 15px;
 }
 #container--secondSection .thirdBox {
-  background-color: #EFE0EE;
+  background-color: #F5EDFF;
 }
 
 #container--thirdSection {
