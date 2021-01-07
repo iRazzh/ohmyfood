@@ -136,3 +136,61 @@
         padding-top: 0.5rem;
     } 
 }
+
+// Restaurants
+#container--menu{
+    width: auto;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    p{
+        margin: 0;
+    }
+    .menu--titleRestaurant{
+        display: flex;
+        margin-top: -45px;
+        background-color: #f6f6f6;
+        position: relative;
+        border-radius: 25px 25px 0 0;
+        padding: 2rem 1rem 0;
+        justify-content: space-between;
+        .name{
+            font-size: 20px;
+        }
+        .fa-heart{
+            padding-right: 2rem;
+            font-size: 19px;
+        }
+    }
+    .starterRestaurants{
+        padding: 2rem 0 1rem;
+        .starter{
+            border-bottom: 3px solid $color-tertiary;
+            width: 2.6rem;
+        }
+    }
+    .dish{
+        background-color: white;
+        margin: 1rem 0;
+        border-radius: 10px;
+        box-shadow: -2px 5px 3px #eaeaea;
+        .dish--title--description--price{
+            padding: 0.5rem;
+        
+            .dish__title{
+                font-weight: bold;
+            }
+            .dish--description--price{
+                display: flex;
+                justify-content: space-between;
+                .dish__description{
+                    font-size: 12px;
+                }
+                .dish__price{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

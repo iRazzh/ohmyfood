@@ -9,3 +9,18 @@
     box-shadow: 4px 5px 5px #94929265;
 }
 
+// Button of  all restaurants
+.section--btn{
+    text-align: center;
+    background-color: #f6f6f6;
+    .btn__Restaurants{
+    margin: 1rem 0 3rem 0;
+    border-radius: 2rem;
+    border: 0;
+    color: white;
+    padding: 1rem 3rem;
+    background-image: radial-gradient(ellipse farthest-corner at 60px 6px, $color-secondary 8%, $color-primary 90%);
+    box-shadow: 4px 5px 5px #94929265;
+    font-weight: bold;
+    }
+}

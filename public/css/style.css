@@ -20,6 +20,21 @@ body, html {
   box-shadow: 4px 5px 5px #94929265;
 }
 
+.section--btn {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.section--btn .btn__Restaurants {
+  margin: 1rem 0 3rem 0;
+  border-radius: 2rem;
+  border: 0;
+  color: white;
+  padding: 1rem 3rem;
+  background-image: radial-gradient(ellipse farthest-corner at 60px 6px, #FF79DA 8%, #9356DC 90%);
+  box-shadow: 4px 5px 5px #94929265;
+  font-weight: bold;
+}
+
 #container--secondSection {
   padding: 0 1rem;
   margin-top: 4rem;
@@ -33,6 +48,11 @@ body, html {
 #container--footer {
   background-color: #353535;
   color: white;
+}
+
+.container--starter--mainCourse--dessert {
+  padding: 0 1rem 1rem;
+  background-color: #f6f6f6;
 }
 
 .footer {
@@ -186,6 +206,62 @@ body, html {
 #container--thirdSection .fa-heart {
   font-size: 25px;
   padding-top: 0.5rem;
+}
+
+#container--menu {
+  width: auto;
+}
+#container--menu img {
+  width: 100%;
+  object-fit: cover;
+}
+#container--menu p {
+  margin: 0;
+}
+#container--menu .menu--titleRestaurant {
+  display: flex;
+  margin-top: -45px;
+  background-color: #f6f6f6;
+  position: relative;
+  border-radius: 25px 25px 0 0;
+  padding: 2rem 1rem 0;
+  justify-content: space-between;
+}
+#container--menu .menu--titleRestaurant .name {
+  font-size: 20px;
+}
+#container--menu .menu--titleRestaurant .fa-heart {
+  padding-right: 2rem;
+  font-size: 19px;
+}
+#container--menu .starterRestaurants {
+  padding: 2rem 0 1rem;
+}
+#container--menu .starterRestaurants .starter {
+  border-bottom: 3px solid #99E2D0;
+  width: 2.6rem;
+}
+#container--menu .dish {
+  background-color: white;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: -2px 5px 3px #eaeaea;
+}
+#container--menu .dish .dish--title--description--price {
+  padding: 0.5rem;
+}
+#container--menu .dish .dish--title--description--price .dish__title {
+  font-weight: bold;
+}
+#container--menu .dish .dish--title--description--price .dish--description--price {
+  display: flex;
+  justify-content: space-between;
+}
+#container--menu .dish .dish--title--description--price .dish--description--price .dish__description {
+  font-size: 12px;
+}
+#container--menu .dish .dish--title--description--price .dish--description--price .dish__price {
+  font-size: 14px;
 }
 
 .header {
