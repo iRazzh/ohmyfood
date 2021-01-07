@@ -194,8 +194,23 @@ body, html {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 .header__title {
-  margin: 0;
   width: 12rem;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+}
+
+.arrow--titleRestaurants a {
+  text-decoration: none;
+  color: black;
+}
+.arrow--titleRestaurants a .fa-arrow-left {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 5%;
+  top: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */
