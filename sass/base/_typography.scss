@@ -1,0 +1,13 @@
+// Shrikhand 
+
+@font-face {
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/shrikhand/shrikhand-v6-latin-regular.eot'), /* IE9 Compat Modes */
+         url('/shrikhand/shrikhand-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/shrikhand/shrikhand-v6-latin-regular.woff2') format('woff2') /*Super Modern Browsers */
+         url('/shrikhand/shrikhand-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/shrikhand/shrikhand-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/shrikhand/shrikhand-v6-latin-regular.svg#Shrikhand') format('svg'); /* Legacy iOS */
+  }

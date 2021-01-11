@@ -7,6 +7,7 @@
     padding: 1rem;
     background-image: radial-gradient(ellipse farthest-corner at 60px 6px, $color-secondary 8%, $color-primary 90%);
     box-shadow: 4px 5px 5px #94929265;
+    cursor: pointer;
 }
 
 // Button of  all restaurants
@@ -22,5 +23,6 @@
     background-image: radial-gradient(ellipse farthest-corner at 60px 6px, $color-secondary 8%, $color-primary 90%);
     box-shadow: 4px 5px 5px #94929265;
     font-weight: bold;
+    cursor: pointer;
     }
 }

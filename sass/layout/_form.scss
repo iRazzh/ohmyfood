@@ -1,10 +1,10 @@
-// First Section = Location / Homepage
+// First Section = Site / Homepage
 
-#section--location{
+#location{
     text-align: center;
     background-color: #f6f6f6;
-
-    .section__location{
+    margin-bottom: 6rem;
+    .location--site{
     background-color: #eaeaea;
     padding: 1rem 0 1rem 0;
     margin-top: 0.2rem;
@@ -14,7 +14,7 @@
         margin-right: 0.5rem;
     }
 
-    .section--title--description--btn{
+    .title--description--btn{
         margin-top: 2rem;
     }
     .section__title{
@@ -27,15 +27,15 @@
     }
 }
 
-// Second Section = Operation / Homepage
+// Second Section = Restaurants / Homepage
 
-#container--secondSection{
+#container--functioning{
 
-    .secondSection__title{
+    .functioning__title{
         font-size: 23px;
         font-weight: bold;
     }
-    .secondSection--Box{
+    .functioning--box{
         display: flex;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
@@ -43,18 +43,20 @@
         border-radius: 1.5rem;
         box-shadow: 0px 5px 4px #eaeaea;
         cursor: pointer;
-    }
-    .numberBox{
-        background-color: $color-primary;
-        color: white;
-        border-radius: 50%;
-        padding: 4px 8px;
-        margin: 0 1.5rem 0 -34px;
-    }
-    .secondSection__text{
-        display: flex;
-
-    }
+        position: relative;
+        .number1, .number2, .number3{
+            background-color: $color-primary;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: calc(0% - 15px);  
+            color: white;
+        }
+    } 
     i{
         font-size: 20px;
         color: grey;
@@ -75,17 +77,17 @@
 
 // Third Section = Restaurants / Homepage
 
-#container--thirdSection{
+#container--restaurants{
 
         background-color: #f6f6f6;
-    .thirdSection__title{
+    .restaurants__title{
         font-size: 23px;
         font-weight: bold;
         margin: 0;
         padding: 3rem 0 1rem;
 
     }
-    .thirdSection__restaurants{
+    .restaurants{
         padding: 0 0 2rem;
     }
     .menus{
@@ -112,7 +114,7 @@
         text-align: center;
         padding: 0.5rem;
         position: absolute;
-        top: 0;
+        top: 1rem;
         right: 1rem;
         border-radius: 5px;
         font-size: 14px;
