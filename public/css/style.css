@@ -321,6 +321,21 @@ body, html {
     position: unset;
     color: black;
   }
+
+  #container--menu .menu--titleRestaurant {
+    justify-content: center;
+  }
+  #container--menu .menu--titleRestaurant .fa-heart {
+    padding-left: 2rem;
+  }
+  #container--menu .dishes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #container--menu .dishes .dish {
+    width: 30%;
+  }
 }
 @media screen and (min-width: 1025px) {
   #container--restaurants .restaurants__title {

@@ -200,11 +200,12 @@
 }
 
 
-                                            // Media Queries 
+                                    // Media Queries 
 
-// Tablet 
+                                       // Tablet 
 
 @media screen and (min-width: $width-tablet){
+// Functioning
 #container--functioning{
     .functioning__title{
         text-align: center;
@@ -219,6 +220,7 @@
     }
 }
 
+// Differents restaurants
 #container--restaurants{
 .restaurants__title{
     text-align: center;
@@ -245,8 +247,13 @@
 }
 
 
-// Laptop
+//Restaurants
+
+
+                                            // Laptop
+
 @media screen and (min-width: $width-laptop){
+// Fuctioning
     .functioning--allBox{
         display: flex;
         .functioning__box{
@@ -255,6 +262,7 @@
         }
     }
 
+// Differents Restaurants
     #container--restaurants{
             .restaurants{
                 .menus{
@@ -267,11 +275,30 @@
             }
         }     
     }
+
+
+// Restaurants
+#container--menu{
+    .menu--titleRestaurant{
+        justify-content: center;
+            .fa-heart{
+                padding-left: 2rem;
+            }
+        }
+    .dishes{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .dish{
+            width: 30%;
+            }
+        }   
+    }
 }
+                                            // Desk 
 
-
-// Desk 
 @media screen and (min-width: $width-desk){
+// Differents Restaurants
     #container--restaurants{
         .restaurants__title{
             padding: 3rem 0 3rem;
@@ -282,4 +309,7 @@
             }
         }
     }
+
+// Restaurants
+
 }
