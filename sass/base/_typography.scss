@@ -2,12 +2,16 @@
 
 @font-face {
     font-family: 'Shrikhand';
-    src: url('/shrikhand/shrikhand-v6-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('/shrikhand/shrikhand-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/shrikhand/shrikhand-v6-latin-regular.woff2') format('woff2') /*Super Modern Browsers */
-         url('/shrikhand/shrikhand-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('/shrikhand/shrikhand-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/shrikhand/shrikhand-v6-latin-regular.svg#Shrikhand') format('svg'); /* Legacy iOS */
+    src: url('../fonts/shrikhand-regular.ttf') format('truetype'); /* Safari, Android, iOS */
     font-style: normal;
     font-weight: normal;
   }
+
+// Roboto
+
+@font-face {
+     font-family: 'Roboto';
+     src: url('../fonts/roboto-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+     font-weight: normal;
+     font-style: normal;
+}

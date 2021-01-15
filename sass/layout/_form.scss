@@ -23,7 +23,7 @@
         margin-bottom: 0;
     }
     .section__description{
-        font-size: 17px;
+        font-size: 19px;
     }
 }
 
@@ -130,9 +130,11 @@
     .restaurantName{
         margin: 0;
         font-weight: bold;
+        font-size: 17px;
     }
     .site{
         margin-top: 0.2rem;
+        font-size: 15px;
     }
     .fa-heart{
         font-size: 25px;
@@ -158,13 +160,16 @@
         border-radius: 25px 25px 0 0;
         padding: 2rem 1rem 0;
         justify-content: space-between;
+        align-items: center;
         .name{
-            font-size: 20px;
+            font-size: 25px;
+            font-family: 'Shrikhand', sans-serif;
         }
         .fa-heart{
-            padding-right: 2rem;
-            font-size: 19px;
+            padding-right: 1rem;
+            font-size: 23px;
         }
+        
     }
     .starterRestaurants{
         padding: 2rem 0 1rem;
@@ -231,15 +236,12 @@
         justify-content: center;
         .menus{
             width: 40%;
-            padding: 1rem 1rem;
+            padding: 0rem 0.5rem;
+            margin: 1rem;
+            flex-wrap: wrap;
             .card{
                 margin: 0;
-                .fa-heart{
-                    position: absolute;
-                    top: 55%;
-                    right: 7%;
-                    color: $color-secondary;
-                    }
+                min-width: 210px;
                 }
             }
         }
@@ -259,6 +261,9 @@
         .functioning__box{
             width: 30%;
             margin-right: 2rem;
+        }
+        .thirdBox{
+            margin-right: 0;
         }
     }
 
