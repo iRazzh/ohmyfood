@@ -141,6 +141,52 @@
         padding-top: 0.5rem;
     } 
 }
+    .heart--animation{
+        background-color: white;
+        width: 13px;
+        height: 12px;
+        top: 217px;
+        right: 22px;
+        transform: rotate(-45deg);
+        position: absolute;
+        cursor: pointer;
+        &:before, &:after{
+            content:"";
+            background-color: white;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        &:before{
+            top: 1px;
+            left: 7px;
+        }     
+        &:after{
+            top: -6px;
+            right: 2px;
+        }
+        &:hover{
+            display: inline-block;
+            animation: linear forwards;
+            background: linear-gradient(
+            rgba(255, 121, 218, 1),
+            rgba(214, 108, 219, 1),
+            rgba(155, 89, 220, 1));
+            &::after{
+                animation: linear forwards;
+                background: linear-gradient(
+                rgba(255, 121, 218, 1),
+                rgba(214, 108, 219, 1));
+                }
+            &::before{
+                animation: linear forwards;
+                transition: 200ms;
+                background:rgba(214, 108, 219, 1);
+            }
+        }     
+}
+
 
 // Restaurants
 #container--menu{
@@ -169,7 +215,51 @@
             padding-right: 1rem;
             font-size: 23px;
         }
-        
+        .heart--animation--restaurants{
+            background-color: #f6f6f6;
+            width: 13px;
+            height: 12px;
+            top: 45px;
+            right: 36px;
+            transform: rotate(-45deg);
+            position: absolute;
+            cursor: pointer;
+            &:before, &:after{
+                content:"";
+                background-color: #f6f6f6;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                position: absolute;
+            }
+            &:before{
+                top: 1px;
+                left: 6px;
+            }     
+            &:after{
+                top: -6px;
+                right: 2px;
+            }
+            &:hover{
+                display: inline-block;
+                animation: linear forwards;
+                background: linear-gradient(
+                rgba(255, 121, 218, 1),
+                rgba(214, 108, 219, 1),
+                rgba(155, 89, 220, 1));
+                &::after{
+                    animation: linear forwards;
+                    background: linear-gradient(
+                    rgba(255, 121, 218, 1),
+                    rgba(214, 108, 219, 1));
+                    }
+                &::before{
+                    animation: linear forwards;
+                    transition: 200ms;
+                    background:rgba(214, 108, 219, 1);
+                }
+            }     
+        }
     }
     .starterRestaurants{
         padding: 2rem 0 1rem;
@@ -288,6 +378,10 @@
         justify-content: center;
             .fa-heart{
                 padding-left: 2rem;
+
+            }
+            .heart--animation--restaurants{
+                right: 380px;
             }
         }
     .dishes{

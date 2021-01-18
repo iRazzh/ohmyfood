@@ -223,6 +223,47 @@ body, html {
   padding-top: 0.5rem;
 }
 
+.heart--animation {
+  background-color: white;
+  width: 13px;
+  height: 12px;
+  top: 217px;
+  right: 22px;
+  transform: rotate(-45deg);
+  position: absolute;
+  cursor: pointer;
+}
+.heart--animation:before, .heart--animation:after {
+  content: "";
+  background-color: white;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  position: absolute;
+}
+.heart--animation:before {
+  top: 1px;
+  left: 7px;
+}
+.heart--animation:after {
+  top: -6px;
+  right: 2px;
+}
+.heart--animation:hover {
+  display: inline-block;
+  animation: linear forwards;
+  background: linear-gradient(#ff79da, #d66cdb, #9b59dc);
+}
+.heart--animation:hover::after {
+  animation: linear forwards;
+  background: linear-gradient(#ff79da, #d66cdb);
+}
+.heart--animation:hover::before {
+  animation: linear forwards;
+  transition: 200ms;
+  background: #d66cdb;
+}
+
 #container--menu {
   width: auto;
 }
@@ -250,6 +291,46 @@ body, html {
 #container--menu .menu--titleRestaurant .fa-heart {
   padding-right: 1rem;
   font-size: 23px;
+}
+#container--menu .menu--titleRestaurant .heart--animation--restaurants {
+  background-color: #f6f6f6;
+  width: 13px;
+  height: 12px;
+  top: 45px;
+  right: 36px;
+  transform: rotate(-45deg);
+  position: absolute;
+  cursor: pointer;
+}
+#container--menu .menu--titleRestaurant .heart--animation--restaurants:before, #container--menu .menu--titleRestaurant .heart--animation--restaurants:after {
+  content: "";
+  background-color: #f6f6f6;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  position: absolute;
+}
+#container--menu .menu--titleRestaurant .heart--animation--restaurants:before {
+  top: 1px;
+  left: 6px;
+}
+#container--menu .menu--titleRestaurant .heart--animation--restaurants:after {
+  top: -6px;
+  right: 2px;
+}
+#container--menu .menu--titleRestaurant .heart--animation--restaurants:hover {
+  display: inline-block;
+  animation: linear forwards;
+  background: linear-gradient(#ff79da, #d66cdb, #9b59dc);
+}
+#container--menu .menu--titleRestaurant .heart--animation--restaurants:hover::after {
+  animation: linear forwards;
+  background: linear-gradient(#ff79da, #d66cdb);
+}
+#container--menu .menu--titleRestaurant .heart--animation--restaurants:hover::before {
+  animation: linear forwards;
+  transition: 200ms;
+  background: #d66cdb;
 }
 #container--menu .starterRestaurants {
   padding: 2rem 0 1rem;
@@ -337,6 +418,9 @@ body, html {
   }
   #container--menu .menu--titleRestaurant .fa-heart {
     padding-left: 2rem;
+  }
+  #container--menu .menu--titleRestaurant .heart--animation--restaurants {
+    right: 380px;
   }
   #container--menu .dishes {
     display: flex;
