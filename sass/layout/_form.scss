@@ -191,9 +191,13 @@
 // Restaurants
 #container--menu{
     width: auto;
-    img{
-        width: 100%;
-        object-fit: cover;
+    .imageMenu{
+        height: 250px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
     }
     p{
         margin: 0;
@@ -254,8 +258,6 @@
                     rgba(214, 108, 219, 1));
                     }
                 &::before{
-                    animation: linear forwards;
-                    transition: 200ms;
                     background:rgba(214, 108, 219, 1);
                 }
             }     
@@ -315,7 +317,7 @@
     }
 }
 
-// Differents restaurants
+// Differents restaurants - Hompeage
 #container--restaurants{
 .restaurants__title{
     text-align: center;
@@ -336,10 +338,14 @@
             }
         }
     }   
-}
-
 
 //Restaurants
+#container--menu{
+    .imageMenu{
+        height: 315px;
+        }   
+    }   
+}
 
 
                                             // Laptop
@@ -374,16 +380,13 @@
 
 // Restaurants
 #container--menu{
+    border-radius: 26%;
+    background-color: #f6f6f6;
     .menu--titleRestaurant{
-        justify-content: center;
             .fa-heart{
                 padding-left: 2rem;
-
             }
-            .heart--animation--restaurants{
-                right: 380px;
-            }
-        }
+    }
     .dishes{
         display: flex;
         justify-content: space-between;
@@ -394,6 +397,7 @@
         }   
     }
 }
+
                                             // Desk 
 
 @media screen and (min-width: $width-desk){
@@ -403,12 +407,22 @@
             padding: 3rem 0 3rem;
         }
         .restaurants{
+            justify-content: space-between;
                 .menus{
                     width: 20%;
             }
         }
     }
 
-// Restaurants
-
+// Restaurants 
+#container--menu{
+    .imageMenu{
+        border-radius: 40%;
+        height: 430px;
+        width: 650px;
+        padding-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    }
 }

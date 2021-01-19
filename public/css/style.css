@@ -267,7 +267,11 @@ body, html {
 #container--menu {
   width: auto;
 }
-#container--menu img {
+#container--menu .imageMenu {
+  height: 250px;
+  overflow: hidden;
+}
+#container--menu .imageMenu img {
   width: 100%;
   object-fit: cover;
 }
@@ -328,8 +332,6 @@ body, html {
   background: linear-gradient(#ff79da, #d66cdb);
 }
 #container--menu .menu--titleRestaurant .heart--animation--restaurants:hover::before {
-  animation: linear forwards;
-  transition: 200ms;
   background: #d66cdb;
 }
 #container--menu .starterRestaurants {
@@ -395,6 +397,10 @@ body, html {
     margin: 0;
     min-width: 210px;
   }
+
+  #container--menu .imageMenu {
+    height: 315px;
+  }
 }
 @media screen and (min-width: 769px) {
   .functioning--allBox {
@@ -413,14 +419,12 @@ body, html {
     color: black;
   }
 
-  #container--menu .menu--titleRestaurant {
-    justify-content: center;
+  #container--menu {
+    border-radius: 26%;
+    background-color: #f6f6f6;
   }
   #container--menu .menu--titleRestaurant .fa-heart {
     padding-left: 2rem;
-  }
-  #container--menu .menu--titleRestaurant .heart--animation--restaurants {
-    right: 380px;
   }
   #container--menu .dishes {
     display: flex;
@@ -435,8 +439,20 @@ body, html {
   #container--restaurants .restaurants__title {
     padding: 3rem 0 3rem;
   }
+  #container--restaurants .restaurants {
+    justify-content: space-between;
+  }
   #container--restaurants .restaurants .menus {
     width: 20%;
+  }
+
+  #container--menu .imageMenu {
+    border-radius: 40%;
+    height: 430px;
+    width: 650px;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .header {
