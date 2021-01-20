@@ -26,6 +26,11 @@ body, html {
   background-image: radial-gradient(ellipse farthest-corner at 60px 6px, #FF79DA 8%, #9356DC 90%);
   box-shadow: 4px 5px 5px #94929265;
   cursor: pointer;
+  transition-duration: 400ms;
+}
+.btn:hover {
+  box-shadow: 4px 5px 5px #706f6f;
+  opacity: 0.9;
 }
 
 .section--btn {
@@ -42,6 +47,11 @@ body, html {
   box-shadow: 4px 5px 5px #94929265;
   font-weight: bold;
   cursor: pointer;
+  transition-duration: 400ms;
+}
+.section--btn .btn__Restaurants:hover {
+  box-shadow: 4px 5px 5px #706f6f;
+  opacity: 0.9;
 }
 
 #container--functioning {
