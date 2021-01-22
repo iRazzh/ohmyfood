@@ -1,6 +1,7 @@
 body, html {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  animation: body 2500ms linear;
 }
 
 @font-face {
@@ -16,6 +17,54 @@ body, html {
   /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal;
+}
+@keyframes body {
+  0% {
+    opacity: 0%;
+  }
+  10% {
+    opacity: 0%;
+  }
+  20% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0.5%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dishAnimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .btn {
   margin: 2rem 0 4rem 0;
@@ -351,29 +400,73 @@ body, html {
   border-bottom: 3px solid #99E2D0;
   width: 2.6rem;
 }
-#container--menu .dish {
+#container--menu .dishes .dish {
   background-color: white;
   margin: 1rem 0;
   border-radius: 10px;
   box-shadow: -2px 5px 3px #eaeaea;
-}
-#container--menu .dish .dish--title--description--price {
-  padding: 0.5rem;
-}
-#container--menu .dish .dish--title--description--price .dish__title {
-  font-weight: bold;
-}
-#container--menu .dish .dish--title--description--price .dish--description--price {
   display: flex;
-  justify-content: space-between;
-  width: auto;
+  overflow: hidden;
 }
-#container--menu .dish .dish--title--description--price .dish--description--price .dish__description {
-  font-size: 12px;
+#container--menu .dishes .dish:hover .animation--icon {
+  margin-right: 0rem;
+}
+#container--menu .dishes .dish:hover .icon__check {
+  animation: check 500ms linear;
+}
+#container--menu .dishes .dish .dish--title--description--price {
+  padding: 0.5rem;
+  display: flex;
   width: 100%;
 }
-#container--menu .dish .dish--title--description--price .dish--description--price .dish__price {
+#container--menu .dishes .dish .dish--title--description--price .dish__title__description {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#container--menu .dishes .dish .dish--title--description--price .dish__title__description .dish__title {
+  margin: 0;
+}
+#container--menu .dishes .dish .dish--title--description--price .dish__title__description .dish__description {
+  margin: 0;
+  text-overflow: ellipsis;
+}
+#container--menu .dishes .dish .dish--title--description--price .dish__price {
+  display: flex;
   font-size: 14px;
+  align-items: flex-end;
+  font-weight: bold;
+}
+#container--menu .dishes .animation--icon {
+  background-color: #99E2D0;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  margin: 0 -4rem 0 1rem;
+  transition: 0.8s;
+}
+#container--menu .dishes .animation--icon .icon__check {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#container--menu .dishes .animation--icon .icon__check .fa-check {
+  color: #99E2D0;
+}
+#container--menu .dishFirst {
+  animation: dishAnimation 1.1s;
+}
+#container--menu .dishSecond {
+  animation: dishAnimation 1.6s;
+}
+#container--menu .dishThird {
+  animation: dishAnimation 2.4s;
 }
 
 @media screen and (min-width: 426px) {
@@ -442,7 +535,8 @@ body, html {
     flex-wrap: wrap;
   }
   #container--menu .dishes .dish {
-    width: 30%;
+    width: 31%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1025px) {
