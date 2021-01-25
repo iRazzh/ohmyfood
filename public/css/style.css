@@ -418,24 +418,24 @@ body, html {
   padding: 0.5rem;
   display: flex;
   width: 100%;
+  overflow: hidden;
 }
 #container--menu .dishes .dish .dish--title--description--price .dish__title__description {
   width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#container--menu .dishes .dish .dish--title--description--price .dish__title__description .dish__title {
-  margin: 0;
-}
-#container--menu .dishes .dish .dish--title--description--price .dish__title__description .dish__description {
+#container--menu .dishes .dish .dish--title--description--price .dish__title__description .dish__title, #container--menu .dishes .dish .dish--title--description--price .dish__title__description .dish__description {
   margin: 0;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
-#container--menu .dishes .dish .dish--title--description--price .dish__price {
+#container--menu .dishes .dish .dish__price {
   display: flex;
   font-size: 14px;
   align-items: flex-end;
   font-weight: bold;
+  padding: 0.5rem;
 }
 #container--menu .dishes .animation--icon {
   background-color: #99E2D0;
@@ -444,7 +444,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border-radius: 0 10px 10px 0;
-  margin: 0 -4rem 0 1rem;
+  margin: 0 -4rem 0 0.5rem;
   transition: 0.8s;
 }
 #container--menu .dishes .animation--icon .icon__check {

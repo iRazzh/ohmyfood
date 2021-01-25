@@ -288,25 +288,26 @@
             padding: 0.5rem;
             display: flex;
             width: 100%;
+            overflow: hidden;
             .dish__title__description{
                 width: 100%;
                 white-space: nowrap;
                 text-overflow: ellipsis;
-                .dish__title{
-                    margin: 0;
-                }
-                .dish__description{
+                .dish__title, .dish__description{
                     margin: 0;
                     text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
+        }
             .dish__price{
                 display: flex;
                 font-size: 14px;
                 align-items: flex-end;
                 font-weight: bold;
+                padding: 0.5rem;
                 }
-            }
+            
         }
         .animation--icon{
                 background-color: $color-tertiary;
@@ -315,7 +316,7 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 0 10px 10px 0;
-                margin: 0 -4rem 0 1rem;
+                margin: 0 -4rem 0 0.5rem;
                 transition: 0.8s;
                 .icon__check{
                     width: 1.5rem;
