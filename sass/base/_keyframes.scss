@@ -21,6 +21,9 @@
         opacity: 1;
     }
 }
+
+// Dish 
+
 @keyframes dishAnimation{
     0%{
         opacity: 0;
@@ -38,6 +41,9 @@
         opacity: 1;
     }
 }
+
+// Check
+
 @keyframes check{
     0%{
         transform: rotate(360deg);
@@ -46,5 +52,29 @@
         transform: rotate(0deg);
     }
 }
+
+// Loader 
+
+@keyframes loaderY{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1.0);
+    }
+}
+
+@keyframes loader{
+    95%{
+        opacity: 1;
+        z-index: 0;
+    }
+    100%{
+        opacity: 0;
+        z-index: -9000;
+    }
+}
+
+
 
 

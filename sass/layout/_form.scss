@@ -342,13 +342,47 @@
         animation: dishAnimation 2.4s;
     }
 }
-    
+
+// Loader 
+
+.loader{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 20rem;
+    animation: loader 3.5s;
+    &__point{
+        width: 4rem;
+        animation: loaderY $anim-duration ease-in-out;
+        border-radius: 50%;
+        margin: 1rem;
+        &--1{
+            background: $color-primary;   
+            animation-delay: 0.25s;         
+        }
+        &--2{
+            background: $color-secondary;
+            animation-delay: 0.75s;
+        }
+        &--3{
+            background: $color-tertiary;
+            animation-delay: 1.25s;
+        }
+    }
+}
+
+.allBody{
+    animation: body 3.5s;
+}
+
 
 
 
                                     // Media Queries 
 
-                                       // Tablet 
+                                    // Tablet 
 
 @media screen and (min-width: $width-tablet){
 // Functioning

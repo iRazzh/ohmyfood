@@ -1,7 +1,6 @@
 body, html{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    animation: body 2500ms linear;
 }
 
 // All important colors 
@@ -16,3 +15,6 @@ $color-footer: #353535;
 $width-tablet: 426px; 
 $width-laptop: 769px;
 $width-desk: 1025px;
+
+// Loader
+$anim-duration: 300ms;

@@ -1,7 +1,6 @@
 body, html {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  animation: body 2500ms linear;
 }
 
 @font-face {
@@ -64,6 +63,24 @@ body, html {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes loaderY {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes loader {
+  95% {
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -9000;
   }
 }
 .btn {
@@ -467,6 +484,38 @@ body, html {
 }
 #container--menu .dishThird {
   animation: dishAnimation 2.4s;
+}
+
+.loader {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 20rem;
+  animation: loader 3.5s;
+}
+.loader__point {
+  width: 4rem;
+  animation: loaderY 300ms ease-in-out;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.loader__point--1 {
+  background: #9356DC;
+  animation-delay: 0.25s;
+}
+.loader__point--2 {
+  background: #FF79DA;
+  animation-delay: 0.75s;
+}
+.loader__point--3 {
+  background: #99E2D0;
+  animation-delay: 1.25s;
+}
+
+.allBody {
+  animation: body 3.5s;
 }
 
 @media screen and (min-width: 426px) {
