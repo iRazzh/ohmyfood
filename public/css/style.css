@@ -576,10 +576,12 @@ body, html {
 
   #container--menu {
     border-radius: 26%;
-    background-color: #f6f6f6;
   }
   #container--menu .menu--titleRestaurant .fa-heart {
     padding-left: 2rem;
+  }
+  #container--menu .imageMenu img {
+    max-height: 18rem;
   }
   #container--menu .dishes {
     display: flex;
@@ -603,10 +605,15 @@ body, html {
   }
 
   #container--menu .imageMenu {
-    border-radius: 40%;
-    height: 430px;
-    width: 650px;
     padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #container--menu .imageMenu img {
+    max-height: 24rem;
+  }
+  #container--menu .menu--titleRestaurant {
+    margin-top: -8px;
     margin-left: auto;
     margin-right: auto;
   }

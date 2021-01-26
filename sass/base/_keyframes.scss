@@ -23,7 +23,6 @@
 }
 
 // Dish 
-
 @keyframes dishAnimation{
     0%{
         opacity: 0;
@@ -43,7 +42,6 @@
 }
 
 // Check
-
 @keyframes check{
     0%{
         transform: rotate(360deg);
@@ -54,7 +52,6 @@
 }
 
 // Loader 
-
 @keyframes loaderY{
     0%{
         transform: scaleY(0);
