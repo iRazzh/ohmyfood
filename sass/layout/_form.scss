@@ -352,7 +352,11 @@
     justify-content: center;
     position: absolute;
     margin-top: 20rem;
-    animation: loader 3.5s;
+    animation: loader .01s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    z-index: 1000;
+    position: fixed;
     &__point{
         width: 4rem;
         animation: loaderY $anim-duration ease-in-out;
@@ -360,15 +364,15 @@
         margin: 1rem;
         &--1{
             background: $color-primary;   
-            animation-delay: 0.25s;         
+            animation-delay: 0.3s;         
         }
         &--2{
             background: $color-secondary;
-            animation-delay: 0.75s;
+            animation-delay: 1s;
         }
         &--3{
             background: $color-tertiary;
-            animation-delay: 1.25s;
+            animation-delay: 1.8s;
         }
     }
 }

@@ -76,11 +76,10 @@ body, html {
 @keyframes loader {
   95% {
     opacity: 1;
-    z-index: 0;
   }
   100% {
     opacity: 0;
-    z-index: -9000;
+    z-index: -1000;
   }
 }
 .btn {
@@ -493,7 +492,11 @@ body, html {
   justify-content: center;
   position: absolute;
   margin-top: 20rem;
-  animation: loader 3.5s;
+  animation: loader 0.01s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 1000;
+  position: fixed;
 }
 .loader__point {
   width: 4rem;
@@ -503,15 +506,15 @@ body, html {
 }
 .loader__point--1 {
   background: #9356DC;
-  animation-delay: 0.25s;
+  animation-delay: 0.3s;
 }
 .loader__point--2 {
   background: #FF79DA;
-  animation-delay: 0.75s;
+  animation-delay: 1s;
 }
 .loader__point--3 {
   background: #99E2D0;
-  animation-delay: 1.25s;
+  animation-delay: 1.8s;
 }
 
 .allBody {
