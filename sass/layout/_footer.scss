@@ -1,28 +1,28 @@
 // Footer Homepage & Restaurants
-.footer{
-    margin-left: 1.5rem;
+#container--footer{
+    padding: 0 2rem;;
     p{
         margin: 0;
     }
-}
-.footer__title{
-    padding: 1.5rem 0;
-    font-family: 'Shrikhand', sans-serif;
-    font-size: 20px;
-}
-.footer__proposing, .footer__partner, .footer__legals{
-    padding: 0 0 0.5rem;
-    .fa-utensils{
-        margin-right: 1rem;
+    .footer__title{
+        padding: 1.5rem 0;
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 20px;
     }
-    .fa-hands-helping{
-        margin-right: 0.5rem;
+    .footer__proposing, .footer__partner, .footer__legals{
+        padding: 0 0 0.5rem;
+        .fa-utensils{
+            margin-right: 1rem;
+        }
+        .fa-hands-helping{
+            margin-right: 0.5rem;
+        }
     }
-}
-.footer__contact{
-    padding: 0 0 2rem;
-    a{
-        text-decoration: none;
-        color: white;
+    .footer__contact{
+        padding: 0 0 2rem;
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
