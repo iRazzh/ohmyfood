@@ -1,21 +1,21 @@
 // Second Section Homepage - Operation
-#container--functioning{
+#containerFunctioning{
     margin: 0 2rem 6rem 2rem;
 }
 
 // Third Section Homepage - Restaurants
-#container--restaurants{
+#containerRestaurants{
     padding: 0 1rem;
 }
 
 // Footer Homepage 
-#container--footer{
+.footer{
     background-color: $color-footer;
     color: white;
 }
 
 // Container Menus Restaurants
-.container--starter--mainCourse--dessert{
+.containerMenu{
     padding: 0 1rem 1rem;
     background-color: #f6f6f6;
 }

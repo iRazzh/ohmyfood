@@ -16,10 +16,10 @@
 }
 
 // Button of  all restaurants
-.section--btn{
+.sectionBtn{
     text-align: center;
     background-color: #f6f6f6;
-    .btn__Restaurants{
+    &__restaurants{
     margin: 1rem 0 3rem 0;
     border-radius: 2rem;
     border: 0;

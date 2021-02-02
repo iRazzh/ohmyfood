@@ -1,15 +1,15 @@
 // Footer Homepage & Restaurants
-#container--footer{
+.footer{
     padding: 0 2rem;;
     p{
         margin: 0;
     }
-    .footer__title{
+    &__title{
         padding: 1.5rem 0;
         font-family: 'Shrikhand', sans-serif;
         font-size: 20px;
     }
-    .footer__proposing, .footer__partner, .footer__legals{
+    &__proposing, &__partner, &__legals{
         padding: 0 0 0.5rem;
         .fa-utensils{
             margin-right: 1rem;
@@ -18,7 +18,7 @@
             margin-right: 0.5rem;
         }
     }
-    .footer__contact{
+    &__contact{
         padding: 0 0 2rem;
         a{
             text-decoration: none;
